@@ -1,0 +1,13 @@
+name: asif
+on:
+    push: 
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+        - name: step1
+          uses: actions/checkout@v4
+        - name: a
+          run: echo checking my custom action
+        - name: custom action
+          uses: ./
